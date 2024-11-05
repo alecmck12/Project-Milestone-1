@@ -1,45 +1,91 @@
+/* General styling for the body of the webpage */
 body {
+    /* Set the font for the entire page */
     font-family: Arial, sans-serif;
+    
+    /* Remove default margin and padding */
     margin: 0;
     padding: 0;
+    
+    /* Set the background color of the page */
     background-color: #17b624;
 }
 
+/* Styling for the header section */
 header {
+    /* Set a dark background color for the header */
     background: #333;
+    
+    /* Set the text color to white */
     color: #fff;
+    
+    /* Add some padding for spacing */
     padding: 10px 0;
+    
+    /* Align the header text to the center */
     text-align: center;
 }
 
+/* Styling for the navigation menu */
 nav ul {
+    /* Remove the default bullet points for the list */
     list-style: none;
+    
+    /* Remove padding from the list */
     padding: 0;
 }
 
+/* Styling for each navigation item */
 nav ul li {
+    /* Display navigation items inline, side by side */
     display: inline;
+    
+    /* Add margin between navigation items */
     margin: 0 15px;
 }
 
+/* Styling for the navigation links */
 nav a {
+    /* Set the text color to white */
     color: #fff;
+    
+    /* Remove underline from the links */
     text-decoration: none;
 }
 
+/* Styling for the main content section */
 main {
+    /* Add padding inside the main content area */
     padding: 20px;
+    
+    /* Set the background color of the main section */
     background: #fff;
+    
+    /* Add margin around the main section for spacing */
     margin: 20px;
+    
+    /* Slightly round the corners of the main section */
     border-radius: 5px;
+    
+    /* Add a subtle shadow around the main section */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Styling for the footer section */
 footer {
+    /* Center-align the footer text */
     text-align: center;
+    
+    /* Add padding for spacing */
     padding: 10px 0;
+    
+    /* Set the background color to match the header */
     background: #333;
+    
+    /* Set the text color to white */
     color: #fff;
+    
+    /* Fix the footer to the bottom of the page */
     position: fixed;
     width: 100%;
     bottom: 0;

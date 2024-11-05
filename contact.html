@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Defines the character set as UTF-8 -->
+    <meta charset="UTF-8"> 
+    <!-- Set the page to scale properly on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Title of the page that appears in the browser tab -->
+    <title>Contact - My Website</title> 
+    <!-- Link to CSS file for styling -->
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <h1>Contact Us</h1> <!-- Main heading for the contact page -->
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <!-- Link to the homepage -->
+                <li><a href="/">Home</a></li> 
+                <!-- Link to the about page -->
+                <li><a href="/about">About</a></li> 
+                <!-- Link to the contact page (current page) -->
+                <li><a href="/contact">Contact</a></li> 
             </ul>
         </nav>
     </header>
+    
     <main>
-        <h2>Contact Form</h2>
-        <p>Please fille out the following information if you wish to be contacted.</p>
-        <form id="contactForm">
+        <!-- Subheading for the contact form section -->
+        <h2>Contact Form</h2> 
+        <!-- Description of the contact form -->
+        <p>Please fill out the following information if you wish to be contacted.</p> 
+        
+        <!-- Added action and method attributes for form submission -->
+        <form id="contactForm" action="/submit-form" method="POST"> 
             <label for="name">Name:</label>
-            <input type="text" id="name" required>
+            <!-- Name input field with required validation -->
+            <input type="text" id="name" name="name" required> 
+            
             <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <input type="submit" value="Submit">
+            <!-- Email input field with required validation -->
+            <input type="email" id="email" name="email" required> 
+            <!-- Submit button for the form -->
+            <input type="submit" value="Submit"> 
         </form>
-        <div id="formMessage"></div>
+        <!-- Placeholder for any messages or form responses -->
+        <div id="formMessage"></div> 
     </main>
+    
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <!-- Footer section with copyright -->
+        <p>&copy; Alec McKenzie's Website</p> 
     </footer>
-    <script src="script.js"></script>
+    <!-- Links to JavaScript file -->
+    <script src="script.js"></script> 
 </body>
 </html>
