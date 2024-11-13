@@ -3,50 +3,62 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #17b624;
+    background-color: #f4f7f6; /* Light grey background for a soft, neutral look */
 }
 
 /* Styling for the header section */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background: #2c3e50; /* Dark blue-gray for a modern, sleek header */
+    color: #ecf0f1; /* Light text color for contrast */
+    padding: 20px 0; /* More padding for a spacious header */
     text-align: center;
+}
+
+/* Styling for images */
+img {
+    width: 50%;
+    height: auto;
 }
 
 /* Styling for the navigation menu */
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center; /* Center the navigation items */
 }
 
-/* Styling for each navigation item */
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block; /* Make each list item inline-block for spacing */
+    margin: 0 20px;
 }
 
-/* Styling for the navigation links */
 nav a {
-    color: #fff;
+    color: #ecf0f1; /* Light text color for links */
     text-decoration: none;
+    font-weight: bold; /* Make links stand out */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav a:hover {
+    color: #3498db; /* Highlight links with blue when hovered */
 }
 
 /* Styling for the main content section */
 main {
-    padding: 20px;
-    background: #fff;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background: #ffffff; /* White background for the content area */
+    margin: 30px;
+    border-radius: 8px; /* Rounded corners for a soft look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 /* Styling for the footer section */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
+    padding: 15px 0;
+    background: #34495e; /* Darker gray-blue for the footer */
+    color: #ecf0f1; /* Light text color for the footer */
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -55,37 +67,39 @@ footer {
 /* Center the main title */
 h1 {
     text-align: center;
-    color: #333;
+    color: #2c3e50; /* Dark blue-gray for the main title */
     margin-top: 40px;
+    font-size: 2.5em;
 }
 
 /* Add padding to paragraphs */
 p {
-    padding: 10px;
-    line-height: 1.6;
+    padding: 15px;
+    line-height: 1.8;
+    color: #555; /* Medium grey text for readability */
 }
 
 /* Style for secondary titles (h2, h3) */
 h2, h3 {
     text-align: center;
-    color: #555;
-    margin-top: 20px;
+    color: #34495e; /* Slightly lighter dark blue-gray */
+    margin-top: 25px;
 }
 
 /* Add spacing to sections */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     header, footer {
-        padding: 8px 0;
+        padding: 15px 0;
     }
 
     main {
-        padding: 15px;
-        margin: 10px;
+        padding: 20px;
+        margin: 15px;
     }
 
     nav ul {
@@ -97,4 +111,42 @@ section {
         display: block;
         margin: 5px 0;
     }
+
+    /* Styling for the About section */
+#about {
+    padding: 20px;
+    position: relative; /* This allows positioning within the section */
+    text-align: center;
+}
+
+/* Container for the image to center it */
+.about-image-container {
+    position: absolute;
+    bottom: 0; /* Positions the image at the bottom of the section */
+    left: 50%;
+    transform: translateX(-50%); /* This centers the image horizontally */
+    width: 30%;
+    text-align: center; /* Centering the image in case the div is wider */
+}
+
+/* Styling for the image */
+.about-image {
+    max-width: 30%; /* Adjust width as needed */
+    height: auto;
+    display: block; /* Ensures the image behaves like a block element, removing space below it */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Banner image styling */
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+
 }
